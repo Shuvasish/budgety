@@ -1,0 +1,379 @@
+/* ---------------------------------------------------------------------- */
+/* basic setup gose here */
+/* ---------------------------------------------------------------------- */
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.container{
+    background: #F7F7F7 ;
+}
+/* ---------------------------------------------------------------------- */
+/* header starts here */
+/* ---------------------------------------------------------------------- */
+.header{
+    background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url(img/land.jpg);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+    
+}
+
+.header__box{
+    /* background:red; */
+    background: #767c6583;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4rem;
+}
+.total__header{
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.total{
+    margin: 2rem;
+}
+.sign{
+
+}
+.header__title{
+    align-self: flex-start;
+    width: 100%;
+}
+.total__income{
+    background-color: #50BE99;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total__income--plus{
+
+}
+
+.total__expense{
+    background-color: #FD6943;
+    padding: 1rem;
+    display: flex;
+    
+}
+
+.total__expense--minus{
+    margin-left: auto ;
+}
+
+.percentage{
+    font-size: 1rem;
+    padding: .5rem;
+    background: #FD855F;
+    border-radius: 2px;
+    
+    
+}
+.main__income--total{
+    margin-right: 5rem;
+}
+.main__expense--total{
+    margin-right: 2.5rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* header ends here */
+/* ---------------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------- */
+/* middle starts here */
+/* ---------------------------------------------------------------------- */
+
+.middle{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.options{
+    padding: 1rem;
+}
+.options__option{
+
+}
+.input__text--receiver{
+    padding: 1rem;
+    border: 1px solid transparent;
+    margin-right: .5rem;
+    margin-left: 0.5rem;
+    background: #FDF6D4;
+    
+}
+.input__text--receiver:focus{
+    color: #50BE99;
+    outline: 1px solid #50BE99;
+    border: 1px solid transparent;
+}
+.input__text--receiver::placeholder{
+    color: #50BE99;
+}
+.input__value--receiver{
+    padding: 1rem;
+    border: 1px solid transparent;
+    margin-right: 0.5rem;
+    background: #FDF6D4;
+}
+.input__value--receiver::placeholder{
+    color: #FD6943;
+}
+.input__value--receiver:focus{
+    color: #FD6943;
+    outline: 1px solid #FD6943;
+    border: 1px solid transparent;
+}
+
+.input__button{
+    padding: 1rem 2rem;
+    background: #FDF6D4;
+    border: 1px solid lawngreen;
+    border-radius: 3px;
+}
+.input__button i{
+    color: lawngreen;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* middle ends here */
+/* ---------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+/* bottom ends here */
+/* ---------------------------------------------------------------------- */
+.bottom{
+    background: #ffffff;
+    border-top: 1px solid rgba(128, 128, 128, 0.26);
+    padding-top: 1rem;
+}
+.inner__bottom{
+    /* background:rgb(179, 17, 17); */
+    
+    width: 70vw;
+    /* height: 50rem; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+/* income */
+.income{
+    background: #FDF6D4;
+    width: 100%;
+    padding: 2rem;
+    margin-right: 5px;
+    
+}
+.income__title{
+    text-transform: uppercase;
+    color: #54d6ab;
+    margin-bottom: 1rem;
+    
+}
+
+.income__lists{
+    list-style: none;
+}
+
+.income__list{
+    padding: 1rem 0rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+    color: #867F5D;
+    display: flex;
+    justify-content: space-between;
+}
+.income__list:first-child{
+    border-top: 1px solid rgba(128, 128, 128, 0.26) ;
+}
+.income__delete{
+    
+}
+.income__delete i{
+    visibility: hidden;
+    margin-left: .5rem;
+    transition: all .2s;
+    color: rgba(255, 0, 0, 0.637);
+}
+.income__list--title{
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+
+.income__list--value{
+    color: #54d6ab;
+    margin-left: auto;
+}
+.income__list:hover  .income__delete i{
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.637);
+}
+
+
+
+/* expenses */
+
+.expenses{
+    background: #FDF6D4;
+    /* background: red; */
+    width: 100%;
+    padding: 2rem;
+}
+.expenses__title{
+    text-transform: uppercase;
+    color: #FD6943;
+    margin-bottom: 1rem;
+}
+.expenses__lists{
+    list-style: none;
+}
+.expenses__title{
+
+}
+.expenses__list{
+    padding: 1rem 0rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+    color: #867F5D;
+    display: flex;
+    justify-content: space-between;
+}
+.expenses__list:first-child{
+    border-top: 1px solid rgba(128, 128, 128, 0.36) ;
+}
+.expenses__list--title{
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+.expenses__list--value{
+    color: #FD6943;
+    margin-left: auto;
+}
+.expenses__delete{
+    
+    margin-left: .5rem;
+}
+.expenses__delete i{
+    color: rgba(255, 0, 0, 0.637);
+    transition: all .2s;
+    visibility: hidden;
+}
+.expenses__list:hover  .expenses__delete i{
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.637);
+}
+.expenses__percentage{
+    background: #FD855F;
+    color: white;
+    border-radius: 2px;
+    margin-left: .5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* bottom ends here */
+/* ---------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* media query */
+/* ---------------------------------------------------------------------- */
+
+
+@media only screen and (max-width:768px){
+    html{
+        
+        font-size: 40%;
+    }
+    .inner__bottom{
+        width: 80vw;
+    }
+    .header__box{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width:425px){
+    html{
+        
+        font-size: 25%;
+    }
+    .input__text--receiver{
+        width: 30vw;
+    }
+    .input__value--receiver{
+        width: 30vw;
+    }
+    .inner__bottom{
+        width: 90vw;
+    }
+    .header__box{
+        width: 50vw;
+    }
+}
+@media only screen and (max-width:375px){
+    html{
+        
+        font-size: 30%;
+    }
+    .inner__bottom{
+        width: 90vw;
+        margin: auto;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgety</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- header starts here-->
+<!-- ---------------------------------------------------------------------------------------- -->
+        <header class="header">
+            <div class="header__box">
+                <h4 class="total__header">Available Budget in <span class="current__month">September</span></h4>
+                <h1 class="total"><span class="sign">+</span>1628.75</h1>
+                <span class="header__title">
+                    <h4 class="total__income">INCOME <span class="total__income--plus"><span></span> <span class="main__income--total">3391.45</span> </span></h4>
+                    <h4 class="total__expense">EXPENSES <span class="total__expense--minus"></span> <span class="main__expense--total"> 3391.45</span> <span class="percentage">52%</span></h4>
+                </span>                                                                 
+            </div>
+        </header>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- middle starts here-->
+<!-- ---------------------------------------------------------------------------------------- -->
+        <section class="middle">
+            <select name="option" class="options" id="option">
+                <option value="inc" class="options__option">+</option>
+                <option value="exp" class="options__option">-</option>
+            </select>
+
+            <input type="text" class="input__text--receiver" placeholder="add description">
+            <input type="number" class="input__value--receiver" placeholder="value">
+
+            <button class="input__button"><i class="far fa-check-circle" ></i></button>
+        </section>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- bottom starts here-->
+<!-- ---------------------------------------------------------------------------------------- -->
+
+        <section class="bottom">
+            <div class="inner__bottom">
+                <div class="income">
+                    <div class="income__title">INCOME</div>
+                    <ul class="income__lists">
+                        <!-- <li class="income__list">
+                            <span class="income__list--title">Website Project</span>
+                            <span class="income__list--value">+ 2500.00</span>
+                            <span class="income__delete"><i class="far fa-times-circle"></i></span>
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="expenses">
+                    <div class="expenses__title">expenses</div>
+                    <ul class="expenses__lists">
+                        <!-- <li class="expenses__list">
+                            <span class="expenses__list--title">Website Project</span>
+                            <span class="expenses__list--value">+ 2500.00</span>
+                            <span class="expenses__percentage">23%</span>
+                            <span class="expenses__delete"><i class="far fa-times-circle"></i></span>
+                        </li> -->
+    
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
